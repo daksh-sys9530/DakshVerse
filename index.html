@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="DakshVerse: personal notes on history, books, science, world affairs and stories."
+    />
+    <title>DakshVerse | A personal encyclopedia</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://covers.openlibrary.org" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="#home" class="site-logo">DakshVerse</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About</a
+        ><a href="#interests">Interests</a><a href="#books">Books</a
+        ><a href="#films">Movies</a><a href="#world-affairs">World</a
+        ><a href="#journal">Journal</a><a href="#reviews">Reviews</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Switch colour theme">☼</button>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <p class="hero-label">A PERSONAL ENCYCLOPEDIA</p>
+          <h1>Daksh<span>Verse</span></h1>
+          <p class="hero-description">
+            A space for the questions I keep returning to: how people lived, how
+            the world changes, and what stories can teach us.
+          </p>
+          <p class="hero-quote">
+            “The more I learn, the more I find worth exploring.”
+          </p>
+          <div class="hero-buttons">
+            <a href="#interests" class="btn-primary">Explore the notes →</a
+            ><a href="#about" class="btn-secondary">About this place</a>
+          </div>
+        </div>
+        <aside class="hero-topics">
+          <span>▤ &nbsp;History</span><span>◎ &nbsp;Geopolitics</span
+          ><span>✦ &nbsp;Space &amp; Science</span
+          ><span>▣ &nbsp;Films &amp; Series</span><span>♫ &nbsp;Literature</span
+          ><span>⌘ &nbsp;Technology</span>
+        </aside>
+        <p class="hero-caption">Same sky. Different perspectives.</p>
+      </section>
+      <section id="interests" class="page-section interests-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE INDEX</p>
+            <h2>Things I keep exploring</h2>
+          </div>
+          <p>Start with a subject. Follow a question wherever it leads.</p>
+        </div>
+        <div class="interest-grid">
+          <a class="interest-card history-card" href="#history"
+            ><span class="card-content"
+              ><h3>History</h3>
+              <p>
+                Civilizations, empires, and the choices that still shape us.
+              </p></span
+            ><span class="card-arrow">→</span></a
+          ><a class="interest-card geopolitics-card" href="#world-affairs"
+            ><span class="card-content"
+              ><h3>Geopolitics</h3>
+              <p>
+                Geography, power, resources, and a changing world order.
+              </p></span
+            ><span class="card-arrow">→</span></a
+          ><a class="interest-card space-card" href="#science"
+            ><span class="card-content"
+              ><h3>Space &amp; Science</h3>
+              <p>
+                From our small blue planet to the scale of the cosmos.
+              </p></span
+            ><span class="card-arrow">→</span></a
+          ><a class="interest-card films-card" href="#films"
+            ><span class="card-content"
+              ><h3>Films &amp; Series</h3>
+              <p>Stories, characters, and worlds that stay with us.</p></span
+            ><span class="card-arrow">→</span></a
+          ><a class="interest-card literature-card" href="#books"
+            ><span class="card-content"
+              ><h3>Literature</h3>
+              <p>Books and ideas that illuminate the human condition.</p></span
+            ><span class="card-arrow">→</span></a
+          ><a class="interest-card tech-card" href="#technology"
+            ><span class="card-content"
+              ><h3>Technology</h3>
+              <p>
+                Computing, artificial intelligence, and what comes next.
+              </p></span
+            ><span class="card-arrow">→</span></a
+          >
+        </div>
+      </section>
+      <section id="about" class="page-section about-section">
+        <div class="about-copy">
+          <p class="eyebrow">A LITTLE CONTEXT</p>
+          <h2>About this notebook</h2>
+          <p>
+            Hey, I’m Daksh, a Computer Science Engineering student. DakshVerse
+            is my place to collect things I learn and questions I haven’t
+            answered yet.
+          </p>
+          <p>
+            It brings together subjects that can seem far apart: an ancient
+            empire, a novel’s restless narrator, a scientific discovery, or a
+            film’s view of the future. The common thread is curiosity.
+          </p>
+          <p>
+            These pages are a work in progress. I want them to grow as I read,
+            watch, question, and change my mind.
+          </p>
+          <a class="text-link" href="#journal">Read the latest notes →</a>
+        </div>
+        <img
+          class="about-image"
+          src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=85"
+          alt="Library shelves filled with books"
+          loading="lazy"
+        />
+        <blockquote class="quote-card">
+          <span>“</span>
+          <p>We suffer more often in imagination than in reality.</p>
+          <cite>— Seneca</cite>
+        </blockquote>
+      </section>
+      <section id="history" class="page-section topic-detail">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FIELD NOTE 01</p>
+            <h2>History: patterns, people, power</h2>
+          </div>
+          <span class="entry-date">A subject to keep revisiting</span>
+        </div>
+        <p>
+          History is more than rulers and dates. It asks how ordinary lives were
+          shaped by trade, belief, technology, climate, and political power.
+          Looking across periods reveals recurring questions: who makes
+          decisions, how societies adapt, and what people choose to remember.
+        </p>
+        <div class="fact-row">
+          <article>
+            <h3>Routes connect ideas</h3>
+            <p>
+              Trade routes carried languages, faiths, skills, and inventions as
+              well as goods. The Silk Roads were a changing network of land and
+              sea connections, not one road.
+            </p>
+          </article>
+          <article>
+            <h3>Sources need questions</h3>
+            <p>
+              A chronicle, coin, building, or personal letter tells a partial
+              story. Asking who made a source and what it leaves out is part of
+              reading carefully.
+            </p>
+          </article>
+          <article>
+            <h3>Then and now</h3>
+            <p>
+              Historical parallels can help, but no two moments are identical.
+              Context lets us compare without forcing the present onto the past.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="science" class="page-section topic-detail image-detail">
+        <img
+          src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1000&q=85"
+          alt="A bright nebula among distant stars"
+          loading="lazy"
+        />
+        <div>
+          <p class="eyebrow">FIELD NOTE 02</p>
+          <h2>Space: a moving neighbourhood</h2>
+          <p>
+            Earth is one of eight planets orbiting the Sun. Our solar system
+            sits in the Milky Way’s Orion Arm, and the Sun carries its planets
+            around the galaxy. One solar orbit around the Milky Way takes
+            roughly 230 million years.
+          </p>
+          <p>
+            Science gives us ways to test ideas about this vast place.
+            Telescopes collect light from distant objects; spacecraft bring
+            instruments closer; careful models connect observations to
+            explanations.
+          </p>
+          <a class="text-link" href="#journal">Browse science notes →</a>
+        </div>
+      </section>
+      <section
+        id="technology"
+        class="page-section topic-detail image-detail reverse-detail"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85"
+          alt="A close view of a printed circuit board"
+          loading="lazy"
+        />
+        <div>
+          <p class="eyebrow">FIELD NOTE 03</p>
+          <h2>Technology: tools and trade-offs</h2>
+          <p>
+            Technology changes what people can do and how they work together. To
+            understand any tool, ask who it helps, what it costs, what
+            information it needs, and who is responsible when it fails.
+          </p>
+          <p>
+            Computer science offers a language for building systems, but good
+            design also depends on people: their needs, access, privacy, and
+            ability to understand what a system is doing.
+          </p>
+        </div>
+      </section>
+      <section id="books" class="page-section books-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ON THE BOOKSHELF</p>
+            <h2>Books I want to think about</h2>
+          </div>
+          <p>Cover images and book details link to Open Library.</p>
+        </div>
+        <div class="book-grid">
+          <article class="book-card">
+            <a
+              href="https://openlibrary.org/isbn/9780141194868"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="https://covers.openlibrary.org/b/isbn/9780141194868-M.jpg"
+                alt="Cover of Notes from Underground"
+                loading="lazy"
+            /></a>
+            <div>
+              <h3>Notes from Underground</h3>
+              <p class="book-author">Fyodor Dostoevsky</p>
+              <p>
+                A restless monologue about pride, freedom, spite, and resistance
+                to neat explanations.
+              </p>
+              <a
+                class="text-link"
+                href="https://openlibrary.org/isbn/9780141194868"
+                target="_blank"
+                rel="noopener"
+                >Book details ↗</a
+              >
+            </div>
+          </article>
+          <article class="book-card">
+            <a
+              href="https://openlibrary.org/isbn/9780061122415"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="https://covers.openlibrary.org/b/isbn/9780061122415-M.jpg"
+                alt="Cover of The Alchemist"
+                loading="lazy"
+            /></a>
+            <div>
+              <h3>The Alchemist</h3>
+              <p class="book-author">Paulo Coelho</p>
+              <p>
+                A fable about a shepherd’s journey and the meaning we give to
+                pursuing a dream.
+              </p>
+              <a
+                class="text-link"
+                href="https://openlibrary.org/isbn/9780061122415"
+                target="_blank"
+                rel="noopener"
+                >Book details ↗</a
+              >
+            </div>
+          </article>
+          <article class="book-card">
+            <a
+              href="https://openlibrary.org/isbn/9780812968255"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="https://covers.openlibrary.org/b/isbn/9780812968255-M.jpg"
+                alt="Cover of Meditations"
+                loading="lazy"
+            /></a>
+            <div>
+              <h3>Meditations</h3>
+              <p class="book-author">Marcus Aurelius</p>
+              <p>
+                Private reflections on discipline, change, responsibility, and
+                trying to act well.
+              </p>
+              <a
+                class="text-link"
+                href="https://openlibrary.org/isbn/9780812968255"
+                target="_blank"
+                rel="noopener"
+                >Book details ↗</a
+              >
+            </div>
+          </article>
+          <article class="book-card">
+            <a
+              href="https://openlibrary.org/isbn/9780062316097"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg"
+                alt="Cover of Sapiens"
+                loading="lazy"
+            /></a>
+            <div>
+              <h3>Sapiens</h3>
+              <p class="book-author">Yuval Noah Harari</p>
+              <p>
+                A broad account of human history and the shared stories and
+                systems people build.
+              </p>
+              <a
+                class="text-link"
+                href="https://openlibrary.org/isbn/9780062316097"
+                target="_blank"
+                rel="noopener"
+                >Book details ↗</a
+              >
+            </div>
+          </article>
+          <article class="book-card">
+            <a
+              href="https://openlibrary.org/isbn/9780143110439"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="https://covers.openlibrary.org/b/isbn/9780143110439-M.jpg"
+                alt="Cover of A Gentleman in Moscow"
+                loading="lazy"
+            /></a>
+            <div>
+              <h3>A Gentleman in Moscow</h3>
+              <p class="book-author">Amor Towles</p>
+              <p>
+                A novel about a life lived within one building, and the
+                friendships that make a world.
+              </p>
+              <a
+                class="text-link"
+                href="https://openlibrary.org/isbn/9780143110439"
+                target="_blank"
+                rel="noopener"
+                >Book details ↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <div class="reference-row">
+        <section id="world-affairs" class="page-section map-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">THE WORLD, IN CONTEXT</p>
+              <h2>A map for following connections</h2>
+            </div>
+          </div>
+          <p>
+            Choose a region to move the map and open a starting note. The labels
+            orient you; each place contains many stories.
+          </p>
+          <div class="map-layout">
+            <div id="world-map" aria-label="Interactive world map"></div>
+            <aside class="map-sidebar">
+              <h3>Explore a region</h3>
+              <div class="region-buttons">
+                <button data-region="americas">Americas</button
+                ><button data-region="europe">Europe</button
+                ><button data-region="middle-east">Middle East</button
+                ><button data-region="africa">Africa</button
+                ><button data-region="india">India</button
+                ><button data-region="east-asia">East Asia</button>
+              </div>
+              <div id="region-note" class="region-note" aria-live="polite">
+                <h4>Start anywhere</h4>
+                <p>Select a region to see a note and questions to explore.</p>
+              </div>
+            </aside>
+          </div>
+          <p class="map-credit">
+            Map tiles ©
+            <a
+              href="https://www.openstreetmap.org/copyright"
+              target="_blank"
+              rel="noopener"
+              >OpenStreetMap contributors</a
+            >.
+          </p>
+        </section>
+        <section id="quiz-poll" class="page-section poll-section">
+          <p class="eyebrow">YOUR TURN</p>
+          <h2>Quick poll</h2>
+          <p>Which subject should get the next entry?</p>
+          <form id="poll-form">
+            <fieldset class="poll-options">
+              <legend class="visually-hidden">Choose a topic</legend>
+              <label
+                ><input type="radio" name="topic" value="History" required />
+                History</label
+              ><label
+                ><input type="radio" name="topic" value="World affairs" /> World
+                affairs</label
+              ><label
+                ><input type="radio" name="topic" value="Space and science" />
+                Space and science</label
+              ><label
+                ><input type="radio" name="topic" value="Books and films" />
+                Books and films</label
+              >
+            </fieldset>
+            <button class="btn-primary">Save my vote</button>
+          </form>
+          <p id="poll-message" class="section-note">
+            Your vote is saved only in this browser.
+          </p>
+        </section>
+      </div>
+      <section id="journal" class="page-section journal-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE NOTEBOOK</p>
+            <h2>Latest thoughts</h2>
+          </div>
+          <p>
+            Short entries to collect what I’m learning. Search by subject or
+            open a note.
+          </p>
+        </div>
+        <label class="search-label" for="journal-search"
+          >Search the journal</label
+        ><input
+          id="journal-search"
+          class="journal-search"
+          type="search"
+          placeholder="Try history, space, books…"
+        />
+        <form id="post-form" class="review-form post-form">
+          <label
+            >New note title<input
+              name="title"
+              maxlength="90"
+              placeholder="What did you learn?"
+              required /></label
+          ><label
+            >Subject<input
+              name="category"
+              maxlength="32"
+              placeholder="History, books, science…"
+              required /></label
+          ><label class="review-wide"
+            >Write your note<textarea
+              name="content"
+              rows="3"
+              maxlength="1200"
+              placeholder="Add a thought, question, or short entry…"
+              required
+            ></textarea></label
+          ><button class="btn-primary">Publish note on this device</button>
+          <p class="section-note review-wide">
+            Your notes are saved in this browser and are not public yet.
+          </p>
+        </form>
+        <div class="journal-grid">
+          <article class="journal-card" data-tags="history trade silk roads">
+            <img
+              src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80"
+              alt="The Colosseum in Rome"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">HISTORY · 4 MIN READ</p>
+              <h3>Trade routes carried more than goods</h3>
+              <p>
+                The Silk Roads connected communities through trade, faiths,
+                skills, and technologies. It is more accurate to picture a
+                shifting web of routes than one fixed road.
+              </p>
+              <details>
+                <summary>Open reading questions</summary>
+                <p>
+                  Which cities became meeting points? What made a route safe or
+                  profitable? How did geography change what travellers could
+                  carry?
+                </p>
+              </details>
+              <a
+                href="https://www.unesco.org/en/silk-roads/about-silk-roads"
+                target="_blank"
+                rel="noopener"
+                class="text-link"
+                >Explore UNESCO’s overview ↗</a
+              >
+            </div>
+          </article>
+          <article
+            class="journal-card"
+            data-tags="science space solar system nasa"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=800&q=80"
+              alt="Stars and a glowing nebula"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">SPACE · 3 MIN READ</p>
+              <h3>Our solar system is a moving neighbourhood</h3>
+              <p>
+                The Sun, eight planets, moons, dwarf planets, and smaller bodies
+                travel together through the Milky Way. Our familiar sky belongs
+                to a much larger structure.
+              </p>
+              <details>
+                <summary>Open reading questions</summary>
+                <p>
+                  How do astronomers define a planet? What can a telescope tell
+                  us from light alone? Which spacecraft are changing our
+                  picture?
+                </p>
+              </details>
+              <a
+                href="https://science.nasa.gov/solar-system/solar-system-facts/"
+                target="_blank"
+                rel="noopener"
+                class="text-link"
+                >Read NASA’s solar system facts ↗</a
+              >
+            </div>
+          </article>
+          <article
+            class="journal-card"
+            data-tags="books literature dostoevsky notes underground"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=800&q=80"
+              alt="An open book in warm light"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">READING · 5 MIN READ</p>
+              <h3>Why the Underground Man argues with himself</h3>
+              <p>
+                In <em>Notes from Underground</em>, Dostoevsky gives us a
+                narrator who is brilliant, defensive, and often contradictory.
+                His voice challenges the idea that people always act in their
+                own rational interest.
+              </p>
+              <details>
+                <summary>Open reading questions</summary>
+                <p>
+                  When is the narrator honest with himself? Does contradiction
+                  make him less reliable, or more recognisably human?
+                </p>
+              </details>
+              <a
+                href="https://openlibrary.org/books/OL31888239M/Notes_from_the_Underground"
+                target="_blank"
+                rel="noopener"
+                class="text-link"
+                >View the book record ↗</a
+              >
+            </div>
+          </article>
+          <article class="journal-card" data-tags="films stories cinema">
+            <img
+              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80"
+              alt="Cinema seats facing a screen"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">FILM · 2 MIN READ</p>
+              <h3>Stories let us practice another point of view</h3>
+              <p>
+                A film can make an unfamiliar choice feel immediate. I want to
+                notice the details that make a story convincing: what it sees,
+                what it leaves unsaid, and whose perspective leads.
+              </p>
+              <details>
+                <summary>Open a note to yourself</summary>
+                <p>
+                  After your next film, write down one scene you keep thinking
+                  about and why it stayed.
+                </p>
+              </details>
+            </div>
+          </article>
+        </div>
+        <p id="journal-empty" class="section-note" hidden>
+          No entries match that search yet.
+        </p>
+      </section>
+      <section id="reviews" class="page-section reviews-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">READERS’ CORNER</p>
+            <h2>What do you think of DakshVerse?</h2>
+          </div>
+          <p>
+            Leave a star rating and a note about the website itself. Reviews are
+            saved in this browser for now.
+          </p>
+        </div>
+        <form id="review-form" class="review-form site-review-form">
+          <label
+            >Your name<input
+              name="name"
+              maxlength="40"
+              placeholder="Name or nickname"
+              required
+          /></label>
+          <fieldset class="star-rating">
+            <legend>Rate the website</legend>
+            <input
+              id="rating-5"
+              type="radio"
+              name="rating"
+              value="5"
+              required
+            /><label for="rating-5" aria-label="5 stars">★</label
+            ><input id="rating-4" type="radio" name="rating" value="4" /><label
+              for="rating-4"
+              aria-label="4 stars"
+              >★</label
+            ><input id="rating-3" type="radio" name="rating" value="3" /><label
+              for="rating-3"
+              aria-label="3 stars"
+              >★</label
+            ><input id="rating-2" type="radio" name="rating" value="2" /><label
+              for="rating-2"
+              aria-label="2 stars"
+              >★</label
+            ><input id="rating-1" type="radio" name="rating" value="1" /><label
+              for="rating-1"
+              aria-label="1 star"
+              >★</label
+            >
+          </fieldset>
+          <label class="review-wide"
+            >Your review<textarea
+              name="message"
+              rows="4"
+              maxlength="500"
+              placeholder="What do you like about the website? What could be better?"
+              required
+            ></textarea></label
+          ><button class="btn-primary">Post website review</button>
+          <p class="section-note review-wide">
+            Reviews stay on this device. A shared public review system needs a
+            server and database.
+          </p>
+        </form>
+        <div id="review-list" class="review-list" aria-live="polite"></div>
+      </section>
+      <section id="films" class="page-section movies-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ON THE WATCHLIST</p>
+            <h2>Films &amp; Series I like</h2>
+          </div>
+          <p>
+            Stories about courage, belonging, ambition, and the choices that
+            shape a life.
+          </p>
+        </div>
+        <div class="movie-grid">
+          <article class="movie-card">
+            <img
+              src="https://www.posterpalace.com/cdn/shop/products/dead-poets-society-us-one-sheet-1989-original-release-posterpalacecom-962776.jpg?v=1671387718"
+              alt="Dead Poets Society theatrical poster"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">FILM · 1989</p>
+              <h3>Dead Poets Society</h3>
+              <p>
+                An inspiring teacher encourages his students to think for
+                themselves and find a voice of their own.
+              </p>
+            </div>
+          </article>
+          <article class="movie-card">
+            <img
+              src="https://image11.m1905.cn/uploadfile/2008/0911/103914337.jpg"
+              alt="The Pursuit of Happyness film poster"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">FILM · 2006</p>
+              <h3>The Pursuit of Happyness</h3>
+              <p>
+                A father keeps moving through hardship while trying to build a
+                more secure future for his son.
+              </p>
+            </div>
+          </article>
+          <article class="movie-card">
+            <img
+              src="https://image.tmdb.org/t/p/w500/yUSL24kpHc9Nls4Pohia4shgcIM.jpg"
+              alt="Swades film poster"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">FILM · 2004</p>
+              <h3>Swades</h3>
+              <p>
+                A return to rural India becomes a story about home,
+                responsibility, and improving life together.
+              </p>
+            </div>
+          </article>
+          <article class="movie-card">
+            <img
+              src="https://image.tmdb.org/t/p/w500/ed5HwvmD5Yoqw0Oe5fEeIHp2jbx.jpg"
+              alt="Succession series poster"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">SERIES · 2018–2023</p>
+              <h3>Succession</h3>
+              <p>
+                A sharp family drama about power, inheritance, loyalty, and the
+                cost of winning.
+              </p>
+            </div>
+          </article>
+          <article class="movie-card">
+            <img
+              src="https://image.tmdb.org/t/p/w500/adAqmzscm4xSYDHw81xiwiLwbhU.jpg"
+              alt="The Shawshank Redemption poster"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">SUGGESTED FILM · 1994</p>
+              <h3>The Shawshank Redemption</h3>
+              <p>
+                A story of patience and hope through years of injustice.
+                Suggested for its perseverance and quiet inspiration.
+              </p>
+            </div>
+          </article>
+          <article class="movie-card">
+            <img
+              src="https://images.moviebuff.com/208de229-d027-494b-9aca-6e7b17498a09?w=600"
+              alt="The Social Network film poster"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">SUGGESTED FILM · 2010</p>
+              <h3>The Social Network</h3>
+              <p>
+                Ambition, friendship, and control collide as a new company
+                grows. Suggested for its sharp look at power and success.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="page-section contact-section">
+        <p class="eyebrow">SAY HELLO</p>
+        <h2>Contact</h2>
+        <p>
+          Have a book suggestion, a correction, or a question for a future
+          entry? I’d like to hear it.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:daksh9530@gmail.com">Email Daksh ↗</a
+          ><a
+            href="https://www.instagram.com/_lostexplorer_1/"
+            target="_blank"
+            rel="noopener"
+            >Instagram ↗</a
+          ><a
+            href="https://www.linkedin.com/in/daksh-saxena-110918323/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn ↗</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#home">DakshVerse</a
+      ><span>Built from curiosity, one note at a time.</span>
+    </footer>
+  </body>
+</html>
